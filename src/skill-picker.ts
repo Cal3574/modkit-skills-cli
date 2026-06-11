@@ -1,8 +1,8 @@
 import { checkbox, select } from "@inquirer/prompts";
-import type { PromptForSkill, PromptForSkills, SkillEntry } from "./types.js";
 
 import { createPromptInterface, isPromptCancelError, questionOrCancel } from "./prompt-utils.js";
 import { formatHeading, formatMuted, formatSkillChoice, isInteractiveContext } from "./ui.js";
+import type { PromptForSkill, PromptForSkills, SkillEntry } from "./types.js";
 
 function renderSkills(stdout: { write(chunk: string): void }, skills: SkillEntry[], installedSkillNames: ReadonlySet<string>): void {
   stdout.write("Available skills:\n\n");
