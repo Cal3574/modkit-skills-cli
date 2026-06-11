@@ -3,6 +3,10 @@
   "version": "3.0.0",
   "description": "Install reusable AI skills into local projects.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cal3574/modkit-skills-cli.git"
+  },
   "files": [
     "dist/bin",
     "dist/src",
