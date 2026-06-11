@@ -1,5 +1,5 @@
-import { checkbox, select } from "@inquirer/prompts";
 import type { PromptForSkill, PromptForSkills, SkillEntry } from "./types.js";
+import { checkbox, select } from "@inquirer/prompts";
 
 import { createPromptInterface, isPromptCancelError, questionOrCancel } from "./prompt-utils.js";
 import { formatHeading, formatMuted, formatSkillChoice, isInteractiveContext } from "./ui.js";
