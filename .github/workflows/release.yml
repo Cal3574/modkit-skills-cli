@@ -40,6 +40,8 @@ jobs:
       - name: Publish to npm
         if: steps.version-check.outputs.skip == 'false'
         run: npm publish --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Tag release
         if: steps.version-check.outputs.skip == 'false'
